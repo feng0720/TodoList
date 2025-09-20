@@ -90,6 +90,7 @@ function App(){
         <h1 className='text-3xl font-1000 text-blue-300 '>{name.toUpperCase()}`ToDoList</h1>
         <Button onClick={handleShowAdd} children={"Add"} classname={"bg-blue-500 mt-4 mb-4"}></Button>
         {showAdd&&<Addthing handleChange={handleChange} context={handleContext} date={handleDate} value={formData} classname="bg-blue-500"/>}
+        <h2>The number of your things is {todo.length}</h2>
         <hr />
         <List list={todo} remove={handleRemove}/>
       </div>}
